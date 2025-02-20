@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mottee Barhoom - Profile</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-    <script defer src="{{ url_for('static', filename='script.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='static/styles.css') }}">
+    <script defer src="{{ url_for('static', filename='static/script.js') }}"></script>
 </head>
 
 <body>
@@ -14,7 +14,7 @@
     <div class="main-container">
         <div class="profile-card">
             <div class="profile-header">
-                <img src="{{ url_for('static', filename='profile.jpg') }}" alt="Profile Picture" class="profile-pic">
+                <img src="{{ url_for('static', filename='static/profile.jpg') }}" alt="Profile Picture" class="profile-pic">
                 <div class="name-title">
                     <h1>Mottee Barhoom</h1>
                     <h2>Network & Operating Systems Engineer</h2>
