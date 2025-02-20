@@ -11,9 +11,6 @@ This is a simple and professional profile webpage for **Mottee Barhoom**, built 
 To run the project locally using Flask:
 
 1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/mottee-barhoom/itmo-wad_hw1.git
-   cd itmo-wad_hw1
 2. **Install Flask (if not already installed):**
    ```bash
    pip install -r requirements.txt
