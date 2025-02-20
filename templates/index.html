@@ -1,22 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mottee Barhoom - Profile</title>
-    <link rel="stylesheet" href="static/styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script defer src="{{ url_for('static', filename='script.js') }}"></script>
 </head>
+
 <body>
-    <div class="container">
+
+    <div class="main-container">
         <div class="profile-card">
-            <img src="static/profile.jpg" alt="Mottee Barhoom" class="profile-pic">
-            <h1>Mottee Barhoom</h1>
-            <h2>Network & Operating Systems Engineer</h2>
-            <p>🔭 I’m currently a Master's student in Information Security at ITMO University, Russia.</p>
-            <p>🌱 I’m currently learning DevOps, Python, and Machine Learning.</p>
-            <p>💻 Experienced in Networking and Operating Systems Administration.</p>
-            <a href="https://github.com/mottee-barhoom" target="_blank" class="github-btn">📂 View GitHub</a>
+            <div class="profile-header">
+                <img src="{{ url_for('static', filename='profile.jpg') }}" alt="Profile Picture" class="profile-pic">
+                <div class="name-title">
+                    <h1>Mottee Barhoom</h1>
+                    <h2>Network & Operating Systems Engineer</h2>
+                </div>
+            </div>
+
+            <div class="profile-body">
+                <p>🔭 I’m currently a Master's student in Information Security at ITMO University, Russia.</p>
+                <p>🌱 I’m currently learning DevOps, Python, and Machine Learning.</p>
+                <p>💻 Experienced in Networking and Operating Systems Administration.</p>
+
+                <!-- GitHub Link -->
+                <a href="https://github.com/mottee-barhoom" target="_blank" class="github-btn">📂 View GitHub</a>
+
+                <!-- Night/Light Mode Toggle -->
+                <button id="modeToggle" class="mode-toggle-btn">🌙 Night Mode</button>
+            </div>
+
+            <div class="footer">
+                <a href="https://www.linkedin.com/in/mottee-barhoom-b1bb00137/" target="_blank">
+                    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="Mottee Barhoom LinkedIn" />
+                </a>
+                <a href="https://www.facebook.com/mottee.barhoom" target="_blank">
+                    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="Mottee Barhoom Facebook" />
+                </a>
+                <a href="https://t.me/Mottee_Barhoom" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Mottee Barhoom Telegram" />
+                </a>
+                <a href="https://vk.com/mottee_barhoom" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/VK.com-logo.svg" alt="Mottee Barhoom VK" />
+                </a>
+            </div>
+            
         </div>
     </div>
+
 </body>
+
 </html>
